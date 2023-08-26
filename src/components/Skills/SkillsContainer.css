@@ -1,0 +1,33 @@
+.skills {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+}
+
+.skills:hover {
+    transform: translateY(-7px);
+}
+
+.skills__description {
+    margin-top: 1em;
+}
+
+.skills__stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.2em 0;
+}
+
+.skills__stack-item {
+    margin: 0.5em;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--clr-fg-alt);
+}
+
+.skills .link--icon {
+    margin-left: 0.5em;
+}

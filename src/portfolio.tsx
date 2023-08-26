@@ -1,19 +1,19 @@
 interface Header {
-    homepage?: string;
-    title?: string;
+    homepage: string;
+    title: string;
 }
 
 interface Social {
-    linkedin?: string;
-    github?: string;
+    linkedin: string;
+    github: string;
 }
 
 interface About {
-    name?: string;
-    role?: string;
-    description?: string;
-    resume?: string;
-    social?: Social;
+    name: 'Jenny Le';
+    role: string;
+    description: string;
+    resume: string;
+    social: Social;
 }
 
 interface Project {
@@ -25,17 +25,17 @@ interface Project {
 }
 
 interface Contact {
-    email?: string;
+    email: string;
 }
 
 const header: Header = {
-    homepage: 'https://rajshekhar26.github.io/cleanfolio',
-    title: 'JS.',
+    homepage: 'https://github.com/LeJenny',
+    title: 'JL.',
 };
 
 const about: About = {
-    name: 'John Smith',
-    role: 'Front End Engineer',
+    name: 'Jenny Le',
+    role: 'Software Engineer & Aspiring Product/Program Manager',
     description:
         'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
     resume: 'https://example.com',
@@ -46,18 +46,82 @@ const about: About = {
 };
 
 const projects: Project[] = [
-    // ... (keep this part the same as your original code)
+    {
+        name: 'Project 1',
+        description:
+            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+        stack: ['SASS', 'TypeScript', 'React'],
+        sourceCode: 'https://github.com',
+        livePreview: 'https://github.com',
+    },
+    {
+        name: 'Project 2',
+        description:
+            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+        stack: ['SASS', 'TypeScript', 'React'],
+        sourceCode: 'https://github.com',
+        livePreview: 'https://github.com',
+    },
+    {
+        name: 'Project 3',
+        description:
+            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+        stack: ['SASS', 'TypeScript', 'React'],
+        sourceCode: 'https://github.com',
+        livePreview: 'https://github.com',
+    },
 ];
 
 const skills: string[] = [
+    'Java',
+    'Python',
+    'C++',
+    'C#',
+    'React',
+    'TypeScript',
+    'Vite',
+    'TailwindCSS',
+    'SASS',
+    'Material UI',
     'HTML',
     'CSS',
     'JavaScript',
-    // ... (keep this part the same as your original code)
+    'Bootstrap',
+    'R',
+    'LaTeX',
+    'MATLAB',
+    'Git',
+    'Data Structures & Algorithms',
+    'Object-Oriented Design',
+];
+
+const techSkills: string[] = [
+    'Figma',
+    'Microsoft 365',
+    'Microsoft Planner',
+    'Google Suite',
+    'Google Analytics',
+    'Adobe Suite',
+    'Windows OS & Server',
+    'Linux',
+    'Ubuntu',
+    'IT',
+    'Cyber Security',
+];
+
+const vocationalSkills: string[] = [
+    'Agile',
+    'JIRA',
+    'Leadership',
+    'Product, Program & Project Management',
+    'Solutions Architecture',
+    'Teamwork & Collaboration',
+    'Presenting',
+    'Public Speaking'
 ];
 
 const contact: Contact = {
-    email: 'johnsmith@mail.com',
+    email: 'lejennyk@gmail.com',
 };
 
 export { header, about, projects, skills, contact };

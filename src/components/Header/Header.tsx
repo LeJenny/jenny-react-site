@@ -2,6 +2,7 @@ import React from 'react';
 import { header } from '../../portfolio';
 import NavBar from '../NavBar/NavBar';  // Change this line
 import './Header.css';
+import NavBar2 from "../NavBar/NavBar2.tsx";
 
 const Header: React.FC = () => {
     const { homepage, title } = header;
@@ -10,7 +11,7 @@ const Header: React.FC = () => {
         <header className='header center'>
             <h3>
                 {homepage ? (
-                    <a href={homepage} className='link'>
+                    <a href={homepage} className='animated-link'>
                         {title}
                     </a>
                 ) : (
