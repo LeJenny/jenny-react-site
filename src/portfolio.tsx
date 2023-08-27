@@ -9,7 +9,7 @@ interface Social {
 }
 
 interface About {
-    name: 'Jenny Le';
+    name: string;
     role: string;
     description: string;
     resume: string;
@@ -40,8 +40,8 @@ const about: About = {
         'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
     resume: 'https://example.com',
     social: {
-        linkedin: 'https://linkedin.com',
-        github: 'https://github.com',
+        linkedin: 'https://linkedin.com/in/jennykle',
+        github: 'https://github.com/LeJenny',
     },
 };
 
@@ -80,8 +80,7 @@ const skills: string[] = [
     'React',
     'TypeScript',
     'Vite',
-    'TailwindCSS',
-    'SASS',
+    'Tailwind CSS',
     'Material UI',
     'HTML',
     'CSS',
@@ -91,22 +90,21 @@ const skills: string[] = [
     'LaTeX',
     'MATLAB',
     'Git',
-    'Data Structures & Algorithms',
-    'Object-Oriented Design',
 ];
 
 const techSkills: string[] = [
     'Figma',
-    'Microsoft 365',
-    'Microsoft Planner',
-    'Google Suite',
-    'Google Analytics',
+    'UML',
+    'UI/UX',
     'Adobe Suite',
+    'Microsoft 365',
+    'Google Suite',
+    'SOLIDWORKS',
+    'AutoCAD & Fusion 360',
     'Windows OS & Server',
     'Linux',
     'Ubuntu',
-    'IT',
-    'Cyber Security',
+    'IT & Cyber Security',
 ];
 
 const vocationalSkills: string[] = [
@@ -116,7 +114,7 @@ const vocationalSkills: string[] = [
     'Product, Program & Project Management',
     'Solutions Architecture',
     'Teamwork & Collaboration',
-    'Presenting',
+    'Presentations',
     'Public Speaking'
 ];
 
@@ -124,4 +122,4 @@ const contact: Contact = {
     email: 'lejennyk@gmail.com',
 };
 
-export { header, about, projects, skills, contact };
+export { header, about, projects, skills, techSkills, vocationalSkills, contact };

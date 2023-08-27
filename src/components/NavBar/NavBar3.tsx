@@ -1,4 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
+import useContext from 'react';
+import useState from 'react';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,29 +9,16 @@ import { ThemeContext } from '../../contexts/theme';
 import { projects, skills, contact } from '../../portfolio';  // Replace with actual type definitions if they exist
 import './NavBar2.pcss';
 
-interface ThemeContextProps {
-    themeName: string;
-    toggleTheme: () => void;
-}
+const Navbar = () => {
+    const [{ themeName, toggleTheme }] = useContext(ThemeContext)
+    const [showNavList, setShowNavList] = useState(false)
 
-const Navbar: React.FC = () => {
-    const contextValue = useContext(ThemeContext);
-
-    if (!contextValue) {
-        // handle error
-        return null;
-    }
-
-    const { themeName, toggleTheme } = contextValue as ThemeContextProps;
-
-    const [showNavList, setShowNavList] = useState<boolean>(false);
-
-    const toggleNavList = () => setShowNavList(!showNavList);
+    const toggleNavList = () => setShowNavList(!showNavList)
 
     return (
         <nav className='center nav'>
             <ul
-                style={{ display: showNavList ? 'flex' : undefined }}
+                style={{ display: showNavList ? 'flex' : '' }}
                 className='nav__list'
             >
                 {projects.length ? (
@@ -87,7 +76,7 @@ const Navbar: React.FC = () => {
                 {showNavList ? <CloseIcon /> : <MenuIcon />}
             </button>
         </nav>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

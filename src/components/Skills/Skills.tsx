@@ -1,24 +1,45 @@
 import uniqid from 'uniqid'
-import { skills } from '../../portfolio'
-import './Skills.css'
-import './SkillsContainer.css'
+import {skills, techSkills, vocationalSkills} from '../../portfolio'
+import './Skills.pcss'
+import './SkillsContainer.pcss'
 
 const Skills = () => {
     if (!skills.length) return null
 
     return (
         <div className='skills'>
-            <div className='projects__grid'>
-        <section className='section skills' id='skills'>
             <h2 className='section__title'>Skills</h2>
-            <ul className='skills__list'>
-                {skills.map((skill) => (
-                    <li key={uniqid()} className='skills__list-item btn btn--plain'>
-                        {skill}
-                    </li>
-                ))}
-            </ul>
-        </section>
+            <div className='projects__grid'>
+                <section className='section skills' id='skills'>
+                    <h2 className='skillsSection__title'>Programming</h2>
+                    <ul className='skills__list'>
+                        {skills.map((skill) => (
+                            <li key={uniqid()} className='skills__list-item btn btn--plain'>
+                                {skill}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+                <section className='section skills' id='skills'>
+                    <h2 className='skillsSection__title'>Technology</h2>
+                    <ul className='skills__list'>
+                        {techSkills.map((skills) => (
+                            <li key={uniqid()} className='skills__list-item btn btn--plain'>
+                                {skills}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+                <section className='section skills' id='skills'>
+                    <h2 className='skillsSection__title'>Vocational</h2>
+                    <ul className='skills__list'>
+                        {vocationalSkills.map((skills) => (
+                            <li key={uniqid()} className='skills__list-item btn btn--plain'>
+                                {skills}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
             </div>
         </div>
     )

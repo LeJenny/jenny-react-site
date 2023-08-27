@@ -1,7 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { about } from '../../portfolio'
-import './About.css'
+import './About.pcss'
 
 const About = () => {
     const { name, role, description, resume, social } = about

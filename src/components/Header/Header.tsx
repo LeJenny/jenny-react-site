@@ -1,7 +1,7 @@
 import React from 'react';
 import { header } from '../../portfolio';
 import NavBar from '../NavBar/NavBar';  // Change this line
-import './Header.css';
+import './Header.pcss';
 import NavBar2 from "../NavBar/NavBar2.tsx";
 
 const Header: React.FC = () => {
