@@ -1,5 +1,5 @@
 .header {
-    height: 8em;
+    height: 4em;
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
@@ -7,20 +7,21 @@
 }
 
 .animated-link {
-    color: #2978b5;
+    color: var(--clr-primary);
     position: relative;
     text-decoration: none;
     overflow: hidden;
+    font-weight: 700;
 }
 
 .animated-link:hover {
-    color: #2978b5;
+    color: var(--clr-primary);
 }
 
 .animated-link:after {
     content: "";
     position: absolute;
-    background-color: #2978b5;
+    background-color: var(--clr-primary);
     height: 3px;
     width: 0;
     left: 0;

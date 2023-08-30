@@ -2,7 +2,8 @@ import React, {useContext, useEffect} from 'react'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import {ThemeContext, ThemeProvider} from "../../contexts/Theme.tsx";
 import '../../App.pcss'
-import '../NavBar/NavBar2.pcss'
+import './Toggle.pcss'
+import '../NavBar/NavBar.pcss'
 
 const Toggle = () => {
     const { isDarkMode, setDarkMode } = useContext(ThemeContext);
@@ -32,13 +33,15 @@ const Toggle = () => {
 
     return (
         <>
+            <div className="toggle-wrapper">
         <DarkModeSwitch
             style={{ marginBottom: '2rem' }}
             checked={isDarkMode}
             onChange={toggleDarkMode}
-            size={120}
+            size={30}
 
         />
+            </div>
         </>
     )
 }

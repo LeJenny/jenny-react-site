@@ -1,9 +1,18 @@
+.nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.15em;
+}
+
 .nav__list {
     margin-right: 1.5em;
     display: flex;
+    align-items: center;
 }
 .nav__list-item {
     margin-left: 1.5em;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .app .nav__hamburger {
@@ -16,6 +25,7 @@
 
 @media (max-width: 600px) {
     .nav__list {
+
         display: none;
         flex-direction: column;
         justify-content: center;

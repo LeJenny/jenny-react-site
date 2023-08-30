@@ -37,7 +37,7 @@ const about: About = {
     name: 'Jenny Le',
     role: 'Software Engineer & Aspiring Product Manager',
     description:
-        'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+        'I\'m a Computer Science student in my last year at San Jose State University with interests in technology, engineering, finance, and business. I\'ve had rigorous internship/project experience in Software Engineering (data engineering, web development, AI, and cloud) and extensive leadership experience in academic clubs and organizations. My ideal role would be any product/program management and software engineering position. Make yourself at home and feel free to peruse my page to your heart\'s content! <3',
     resume: 'https://example.com',
     social: {
         linkedin: 'https://linkedin.com/in/jennykle',
