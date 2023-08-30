@@ -8,8 +8,8 @@ const Skills = () => {
 
     return (
         <div className='skills'>
-            <h2 className='section__title'>Skills</h2>
-            <div className='projects__grid'>
+            <h2 className='skills__title'>Skills</h2>
+            <div className='skills__grid'>
                 <section className='section skills' id='skills'>
                     <h2 className='skillsSection__title'>Programming</h2>
                     <ul className='skills__list'>

@@ -1,5 +1,6 @@
+import React from 'react';
 import { header } from '../../portfolio'
-import Navbar from '../NavBar/NavBar2.tsx'
+import Navbar from '../NavBar/NavBar3.tsx'
 import './Header2.pcss'
 
 const Header = () => {

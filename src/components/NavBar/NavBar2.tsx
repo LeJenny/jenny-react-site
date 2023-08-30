@@ -3,7 +3,7 @@ import Brightness2Icon from '@mui/icons-material/Brightness2';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../contexts/Theme.tsx';
 import { projects, skills, contact } from '../../portfolio';  // Replace with actual type definitions if they exist
 import './NavBar2.pcss';
 

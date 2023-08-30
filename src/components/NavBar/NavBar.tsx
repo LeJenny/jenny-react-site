@@ -3,11 +3,11 @@ import Brightness2Icon from '@mui/icons-material/Brightness2'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
-import { ThemeContext } from '../../contexts/theme'
+import { ThemeContext } from '../../contexts/Theme.tsx'
 import { projects, skills, contact } from '../../portfolio'
 import './NavBar.pcss'
 
-const Navbar: React.FC = () => {
+const NavBar = () => {
     const [showNavList, setShowNavList] = useState(false);  // <-- Moved up
     const context = useContext(ThemeContext);  // <-- Use the context variable here
 
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
     return (
         <nav className='center nav'>
             <ul
-                style={{ display: showNavList ? 'flex' : '' }}
+                style={{display: showNavList ? 'flex' : '' }}
                 className='nav__list'
             >
                 {projects.length ? (
@@ -84,4 +84,4 @@ const Navbar: React.FC = () => {
     );
 };
 
-export default Navbar
+export default NavBar

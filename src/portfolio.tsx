@@ -35,7 +35,7 @@ const header: Header = {
 
 const about: About = {
     name: 'Jenny Le',
-    role: 'Software Engineer & Aspiring Product/Program Manager',
+    role: 'Software Engineer & Aspiring Product Manager',
     description:
         'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
     resume: 'https://example.com',
